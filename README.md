@@ -13,10 +13,7 @@ Este es un proyecto de ejemplo que permite chatear con un modelo de Ollama usand
 
 ## Instalación
 
-1. Clona este repositorio en tu máquina local:
-    ```sh
-    git clone https://github.com/tu-usuario/VSOllamaTest.git
-    ```
+1. Clona este repositorio en tu máquina local    
 
 2. Asegúrate de que el servidor API de Ollama esté corriendo en `http://localhost:11434`.
 
