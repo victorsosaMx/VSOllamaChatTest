@@ -37,6 +37,28 @@ Este es un proyecto de ejemplo que permite chatear con un modelo de Ollama usand
 - JavaScript
 - Ollama (https://ollama.com/)
 
+
+## Documentación del Código
+Sección <head>
+Metadatos: Incluye el charset y la configuración de viewport para asegurar que la página sea responsive.
+Título: Define el título de la página.
+Estilos CSS: Define los estilos básicos para el cuerpo, el chat box, el input de texto, y el botón de enviar, incluyendo estilos adicionales para mejorar la apariencia del botón y agregar un efecto hover.
+
+Sección <body>
+Estructura HTML: Utiliza una estructura de Bootstrap para un diseño responsivo. Incluye un contenedor, una fila, y una columna.
+Elementos del Chat: Incluye un div para mostrar los mensajes (#chat-box), un input de texto para ingresar los mensajes (#chat-input), y un botón para enviar mensajes (#send-button).
+
+Script JavaScript
+Event Listener: Agrega un evento click al botón de enviar para llamar a la función sendMessage.
+
+Función sendMessage:
+Captura el Input: Obtiene el valor del input de texto y lo agrega al chat box.
+Indicador de Carga: Muestra un mensaje "Cargando respuesta..." mientras se espera la respuesta del servidor.
+Fetch con Timeout: Implementa una función fetchWithTimeout que envuelve la solicitud fetch en un Promise.race para agregar un timeout.
+Solicitud a la API: Realiza la solicitud a la API usando fetch con el método POST, incluyendo el modelo y el prompt como JSON.
+Manejo de Respuesta: Procesa la respuesta de la API y la muestra en el chat box. Si la solicitud es exitosa, se actualiza el chat box con la respuesta del modelo. Si ocurre un error, se muestra un mensaje de error en el chat box.
+
+
 ## Créditos
 
 Este proyecto fue desarrollado como una práctica de HTML, CSS y JavaScript.
